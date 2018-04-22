@@ -14,14 +14,23 @@ class PrefsViewController: NSViewController {
 	@IBOutlet weak var customSlider: NSSlider!
 	@IBOutlet weak var customTextField: NSTextField!
 	
+	var prefs = Preferences()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+		showExistingPrefs()
     }
-    
+
+	func showExistingPrefs() {
+		customSlider.integerValue = Int(prefs.selectedTime)
+		customTextField.stringValue = "\(customSlider.integerValue) minutes"
+	}
+	
 	@IBAction func popupValueChanged(_ sender: Any) {
 	}
 	@IBAction func sliderValueChanged(_ sender: Any) {
+		prefs.selectedTime = Double(customSlider.integerValue)
+		customTextField.stringValue = "\(customSlider.integerValue) minutes"
 	}
 	@IBAction func cancelButtonClicked(_ sender: Any) {
 	}

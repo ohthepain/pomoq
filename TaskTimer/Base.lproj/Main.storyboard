@@ -125,7 +125,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TaskTimer" customModuleProvider="target">
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Pomoq" customModuleProvider="target">
                     <connections>
                         <outlet property="resetTimerMenuItem" destination="yy5-J7-PiU" id="Pok-cG-hAS"/>
                         <outlet property="startTimerMenuItem" destination="j1z-mz-i7P" id="FzV-rn-AER"/>
@@ -182,7 +182,7 @@
         <!--Prefs View Controller-->
         <scene sceneID="jmi-5e-52i">
             <objects>
-                <viewController id="cXi-EH-Cyl" customClass="PrefsViewController" customModule="TaskTimer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cXi-EH-Cyl" customClass="PrefsViewController" customModule="Pomoq" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Gt3-C0-OOC">
                         <rect key="frame" x="0.0" y="0.0" width="416" height="214"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -241,7 +241,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cG-uN-qLT">
                                 <rect key="frame" x="18" y="63" width="380" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" enabled="NO" state="on" alignment="left" minValue="1" maxValue="25" doubleValue="6" tickMarkPosition="above" numberOfTickMarks="25" allowsTickMarkValuesOnly="YES" sliderType="linear" id="tKl-WE-bF3"/>
+                                <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="3600" doubleValue="1" tickMarkPosition="above" numberOfTickMarks="12" allowsTickMarkValuesOnly="YES" sliderType="linear" id="tKl-WE-bF3"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" target="cXi-EH-Cyl" id="D7x-rr-PHj"/>
                                 </connections>
@@ -275,7 +275,7 @@ Gw
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="TaskTimer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Pomoq" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="346" height="478"/>
                         <autoresizingMask key="autoresizingMask"/>
